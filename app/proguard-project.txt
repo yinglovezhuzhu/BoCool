@@ -1,0 +1,110 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+#-dontshrink
+#-dontoptimize
+
+#-libraryjars libs/com.umeng.fb.v5.0.0.jar
+#-libraryjars libs/umeng-analytics-v5.4.2.jar
+#-libraryjars libs/umeng-update-v2.4.2.jar
+
+-dontwarn android.**
+-dontwarn com.umeng.**
+-dontwarn com.iflytek.**
+-dontwarn com.sina.weibo.sdk.**
+-dontwarn com.tencent.tauth.**
+
+##---------------Begin: proguard configuration for Gson  ----------  
+# Gson uses generic type information stored in a class file when working with fields. Proguard  
+# removes such information by default, so configure it to keep all of it.  
+-keepattributes Signature  
+
+-keep class com.google.gson.**
+
+# Gson specific classes
+-keep class com.google.gson.stream.** { *; }
+  
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }
+
+##---------------End: proguard configuration for Gson  ---------- 
+
+
+##---------------Begin: proguard configuration for Umeng  ---------- 
+-keep class com.umeng.**
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keep public class com.xiaoying.bocool.R$*{
+	public static final int *;
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+##---------------End: proguard configuration for Umeng  ----------
+
+
+#-keep class * extends android.support.v4.app.FragmentActivity
+
+-keep public class android.**
+-keep class com.opensource.bitmaploader.**
+
+-keep class com.xiaoying.bocool.bean.** { *; }
+
+##--------------- Start: proguard configuration for bmob -------------
+#-ignorewarnings
+# 这里根据具体的SDK版本修改
+#-libraryjars libs/BmobSDK_V3.3.8_0521.jar
+
+-keep class cn.bmob.v3.** {*;}
+##--------------- End: proguard configuration for bmob -------------
+
+##--------------- Start: proguard configuration for baidu tts -------------
+-keep class com.baidu.android.common.** {*;}
+-keep class com.baidu.speechsynthesizer.** {*;}
+##--------------- End: proguard configuration for baidu tts -------------
+
+
+##--------------- Start: proguard configuration for jpush -------------
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontnote
+-verbose
+
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.IntentService
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+##--------------- End: proguard configuration for baidu jpush -------------
+

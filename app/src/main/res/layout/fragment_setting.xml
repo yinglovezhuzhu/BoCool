@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/setting_content_padding" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_setting_content">
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/menu_content_padding"
+	        android:gravity="center_vertical">
+	        <ImageView 
+	            android:id="@+id/iv_menu_avatar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:scaleType="centerCrop"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/logo_avatar"
+	           	android:background="@drawable/bg_menu_avatar"
+	           	android:contentDescription="@string/app_name"/>
+	        <LinearLayout 
+	            android:orientation="vertical"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:paddingLeft="@dimen/menu_content_padding"
+	            android:paddingStart="@dimen/menu_content_padding"
+	            android:paddingRight="0dip"
+	            android:paddingEnd="0dip">
+	            <TextView 
+	                android:id="@+id/tv_menu_app_name"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/app_name"
+	                android:textColor="@color/text_color_black"
+	                android:textSize="@dimen/menu_header_title_textSzie"
+	                android:textStyle="bold"/>
+	            <TextView 
+	                android:id="@+id/tv_menu_app_label"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/happy_word"
+	                android:textSize="@dimen/menu_header_label_textSzie"
+	                android:textColor="@color/text_color_black"
+	                android:paddingTop="3dip"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dip"
+	        android:background="@color/gray_divider"/>
+	    <LinearLayout 
+	        style="@style/SettingItem"
+	        android:id="@+id/ll_setting_user_setting"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            style="@style/SettingItemTitleText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/user_setting"/>
+	        <TextView
+	            android:id="@+id/tv_setting_user_setting"
+	            style="@style/SettingItemLabelText"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dip"
+	        android:background="@color/gray_divider"/>
+	    <LinearLayout 
+	        style="@style/SettingItem"
+	        android:id="@+id/ll_setting_clean_cache"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            style="@style/SettingItemTitleText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/clean_cache"/>
+	        <TextView
+	            android:id="@+id/tv_setting_cache"
+	            style="@style/SettingItemLabelText"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dip"
+	        android:background="@color/gray_divider"/>
+	    <LinearLayout 
+	        style="@style/SettingItem"
+	        android:id="@+id/ll_setting_update"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            style="@style/SettingItemTitleText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/update"/>
+	        <TextView
+	            android:id="@+id/tv_setting_version"
+	            style="@style/SettingItemLabelText"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"/>
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dip"
+	        android:background="@color/gray_divider"/>
+	    <LinearLayout 
+	        style="@style/SettingItem"
+	        android:id="@+id/ll_setting_feddback"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            style="@style/SettingItemTitleText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/feedback"/>
+	        <TextView
+	            android:id="@+id/tv_setting_feeeback"
+	            style="@style/SettingItemLabelText"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dip"
+	        android:background="@color/gray_divider"/>
+	    <LinearLayout 
+	        style="@style/SettingItem"
+	        android:id="@+id/ll_setting_about"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            style="@style/SettingItemTitleText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/about"/>
+	        <TextView
+	            android:id="@+id/tv_setting_about"
+	            style="@style/SettingItemLabelText"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"/>
+</LinearLayout>

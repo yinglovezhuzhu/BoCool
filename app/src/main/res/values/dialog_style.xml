@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="DialogSingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 对话框样式 -->
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+     <!-- 菜单对话框Start -->
+    <style name="MenuDialogTheme" parent="@style/DialogTheme">
+        <item name="android:windowBackground">@drawable/bg_menudialog</item>
+    </style>
+    
+    <!-- 对话框动画 -->
+    <style name="MenuDialogAnimation" parent="android:Animation">
+		<item name="@android:windowEnterAnimation">@anim/menu_dialog_show</item>
+		<item name="@android:windowExitAnimation">@anim/menu_dialog_cancel</item>
+    </style>
+    
+	<style name="MenuDialogPanel">
+	    <item name="android:paddingLeft">@dimen/menu_dialog_content_padding_horizontal</item>
+	    <item name="android:paddingTop">@dimen/menu_dialog_content_padding_vertical</item>
+	    <item name="android:paddingRight">@dimen/menu_dialog_content_padding_horizontal</item>
+	    <item name="android:paddingBottom">@dimen/menu_dialog_content_padding_vertical</item>
+	</style>
+	
+	<style name="MenuDialogMenuList">
+	    <item name="android:divider">@color/dialog_transparent</item>
+	    <item name="android:dividerHeight">@dimen/menu_dialog_menu_divider_height</item>
+	    <item name="android:listSelector">@color/dialog_transparent</item>
+	    <item name="android:cacheColorHint">@color/dialog_transparent</item>
+	</style>
+	
+	<style name="MenuDialogMenuItem" parent="@style/DialogSingleLine">
+	    <item name="android:minHeight">@dimen/menu_dialog_menu_item_minHeight</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textSize">@dimen/menu_dialog_menu_item_textSize</item>
+	    <item name="android:background">@drawable/btn_menudialog_item_selector</item>
+	    <item name="android:textColor">@color/dialog_text_color_black</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:shadowDy">1.3</item>
+	    <item name="android:shadowColor">@color/dialog_white_shadow</item>
+	</style>
+	
+	<style name="MenuDialogMenuButton" parent="@style/DialogSingleLine">
+	    <item name="android:minHeight">@dimen/menu_dialog_menu_item_minHeight</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textSize">@dimen/menu_dialog_menu_item_textSize</item>
+	    <item name="android:background">@drawable/btn_menudialog_cancel_selector</item>
+	    <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:shadowDy">1.3</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	</style>
+	<!-- 菜单对话框End -->
+	
+	<!-- 自定义对话框Start -->
+    <style name="CustomDialogTheme" parent="@style/DialogTheme">
+        <item name="android:windowBackground">@color/dialog_transparent</item>
+    </style>
+    
+    <style name="CustomDialogTitle" parent="@style/DialogSingleLine">
+        <item name="android:textSize">@dimen/custom_dialog_title_textSize</item>
+        <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.3</item>
+    </style>
+    
+    <style name="CustomDialogMessage">
+        <item name="android:textSize">@dimen/custom_dialog_message_textSize</item>
+        <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.2</item>
+	    <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="CustomDialogInput">
+        <item name="android:textSize">@dimen/custom_dialog_message_textSize</item>
+        <item name="android:textColor">@color/dialog_text_color_black</item>
+        <item name="android:textColorHint">@color/dialog_text_hint_color</item>
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+    
+    <style name="CustomDialogItemText">
+        <item name="android:textSize">@dimen/custom_dialog_item_textSize</item>
+        <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.2</item>
+	    <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+	
+	<style name="CustomDialogButton" parent="@style/DialogSingleLine">
+	    <item name="android:padding">@dimen/custom_dialog_button_padding</item>
+	    <item name="android:textSize">@dimen/custom_dialog_button_textSize</item>
+	</style>
+	
+	<style name="CustomDialogPositiveButton" parent="@style/CustomDialogButton">
+	    <item name="android:background">@drawable/btn_dialog_positive_selector</item>
+	    <item name="android:layout_marginLeft">@dimen/custom_dialog_button_margin</item>
+	    <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.3</item>
+	</style>
+	
+	<style name="CustomDialogNegativeButton" parent="@style/CustomDialogButton">
+	    <item name="android:background">@drawable/btn_dialog_negative_selector</item>
+	    <item name="android:textColor">@color/dialog_text_color_black</item>
+	    <item name="android:layout_marginRight">@dimen/custom_dialog_button_margin</item>
+	    <item name="android:shadowColor">@color/dialog_white_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.3</item>
+	</style>
+	<!-- 自定义对话框End -->
+	
+	<!-- 自定义Progress对话框Start -->
+	<style name="CustomProgressDialogTheme" parent="@style/DialogTheme">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+    
+	<style name="CustomProgressDialogMessage">
+        <item name="android:textSize">@dimen/custom_progressdialog_message_textSize</item>
+        <item name="android:textColor">@color/dialog_text_color_white</item>
+	    <item name="android:shadowColor">@color/dialog_black_shadow</item>
+	    <item name="android:shadowRadius">1.0</item>
+	    <item name="android:shadowDy">1.2</item>
+	    <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+	<!-- 自定义Progress对话框End -->
+</resources>

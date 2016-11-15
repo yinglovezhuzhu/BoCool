@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoying.bocool"
+    android:versionCode="6"
+    android:versionName="2.3.0711" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.xiaoying.bocool.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    
+    <uses-permission android:name="com.xiaoying.bocool.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".BoCoolApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppNoTitleBar">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        
+        <!-- 专辑详情页 -->
+        <activity
+            android:name=".ui.IssueActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".ui.UserSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ui.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        
+        <!-- 友盟相关START -->
+        <activity 
+		    android:name="com.umeng.update.UpdateDialogActivity"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" >
+		</activity>
+        <service
+		    android:name="com.umeng.update.net.DownloadingService"
+		    android:process=":DownloadingService" >
+		</service>
+        <meta-data android:name="UMENG_APPKEY" android:value="554d543ce0f55a113d000356"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="${CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="99875680f363d3f52c9746bd4a88ae17" >
+        </meta-data>
+
+         <!--<meta-data android:name="UMENG_CHANNEL" android:value="official"/>-->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="360"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="wandoujia"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="baidu"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="91"/> -->
+        
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="AppStore"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="anzhi"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="uc"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="appchina"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="gfan"/> -->
+
+<!--         <meta-data android:name="UMENG_CHANNEL" android:value="qq"/> -->
+
+        <!--<meta-data android:name="UMENG_CHANNEL" android:value="mumayi"/>-->
+        <!-- 友盟相关END -->
+
+        <!-- JPush START -->
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.xiaoying.bocool" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.xiaoying.bocool" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.xiaoying.bocool.receiver.JPushReciver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <!--<action android:name="cn.jpush.android.intent.UNREGISTRATION" />-->
+                <!--<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> &lt;!&ndash;Required  用户接收SDK消息的intent&ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> &lt;!&ndash;Required  用户接收SDK通知栏信息的intent&ndash;&gt;-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <!--<action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> &lt;!&ndash;Optional 用户接受Rich Push Javascript 回调函数的intent&ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.CONNECTION" />&lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt;-->
+                <category android:name="com.xiaoying.bocool" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="${CHANNEL_VALUE}"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="77452ba4eeef6af2194d1cce" /> <!--  </>值来自开发者平台取得的AppKey-->
+        <!-- JPush END -->
+
+        <!-- Bmob START -->
+        <meta-data android:name="BMOB_APPID" android:value="cedab853a2ea432735061b2e967e5b72" />
+        <!-- Bmob END -->
+
+        <!-- Baidu tts START -->
+        <meta-data android:name="BAIDU_TTS_API_KEY" android:value="zxaXwAndtgouwLqLqNO3OoEr" />
+        <meta-data android:name="BAIDU_TTS_SECRET_KEY" android:value="6zdc0nsBIn2msn4zQLhaGQqrd2oFK6M4" />
+        <!-- Baidu tts END -->
+        <receiver android:name=".receiver.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

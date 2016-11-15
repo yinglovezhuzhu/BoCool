@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.xiaoying.bocool.widget.Titlebar
+        android:id="@+id/tb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:padding="@dimen/feedback_contentPadding">
+	        <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="start"
+		        android:textSize="@dimen/feedback_textSize"
+		        android:textColor="#FFFF0000"
+		        android:text="@string/feedback_content_tip"/>
+		    <EditText 
+		        style="@style/EditTextStyle"
+		        android:id="@+id/et_feedback_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/feedback_content_input_margingTop"
+		        android:minLines="8"
+		        android:maxLines="8"
+		        android:gravity="top|start"
+		        android:inputType="textMultiLine"
+		        android:hint="@string/feedback_content_hint"/>
+		    <EditText 
+		        style="@style/EditTextStyle"
+		        android:id="@+id/et_feedback_contact"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/feedback_inputs_marging"
+		        android:maxLines="1"
+		        android:inputType="textEmailAddress"
+		        android:hint="@string/feedback_contact_hint"
+		        android:imeOptions="actionDone"/>
+		    <Button 
+		        android:id="@+id/btn_feedback_submit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/feedback_submit_margingTop"
+		        android:minWidth="@dimen/feedback_submit_minWidth"
+		        android:background="@drawable/btn_red_selector"
+		        android:textSize="@dimen/feedback_submit_textSize"
+		        android:textColor="@color/text_color_white"
+		        android:text="@string/submit_with_space"/>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

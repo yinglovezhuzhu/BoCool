@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">宝酷</string>
+    
+    <string name="app_error">软件错误</string>
+
+    <string name="xunfei_tts_app_id">55759e8d</string>
+
+    <!-- 知识库 -->
+    <string name="storage">卡片库</string>
+    <string name="new_str">NEW</string>
+    <string name="refreshing">正在刷新……</string>
+    <string name="loading">正在加载……</string>
+    <string name="loading_data">正在加载数据</string>
+    <string name="loading_image_failed">图片加载失败</string>
+    <string name="click_to_reload">点击重新加载</string>
+    <string name="net_error">网络错误</string>
+    <string name="no_network">无网络连接</string>
+    <string name="checking_network">检查网络设置</string>
+    <string name="load_error">加载失败</string>
+    <string name="net_timeout">网络请求超时</string>
+    <string name="network_restored">网络已恢复</string>
+    <string name="no_usable_network">没有找到可用网络,请检查网络设置</string>
+
+    <string name="favorite">我的收藏</string>
+
+    <string name="setting">设置</string>
+    <string name="user_setting">偏好设置</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="update">版本更新</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于宝酷</string>
+    
+    <string name="happy_word">开心学习，快乐成长</string>
+    
+    <string name="copyright">Copyright©2014\nyinglovezhuzhu@gmail.com版权所有</string>
+    
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <string name="submit">提交</string>
+    <string name="submit_with_space">提 交</string>
+    <string name="network_unavailable">网络不可用，请检查网络设置！</string>
+    <string name="network_error">网络连接发生错误</string>
+    
+    <!-- 设置 -->
+    <string name="checking_update">正在检查更新</string>
+    <string name="has_new_version">发现新版本</string>
+    <string name="no_new_version">已经是最新版本</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">稍后再说</string>
+    <string name="version_name">新版版本号：v</string>
+    <string name="update_log">更新日志：</string>
+    <string name="calculating">正在计算…</string>
+    <string name="clean_chache_warming">缓存包含图片和声音数据，清除缓存后将会使图片和声音初次加载时间长，消耗更多流量，您确定要清楚缓存吗？</string>
+    <string name="cleaning_cache">正在清除缓存…</string>
+    <string name="cache_has_been_cleaned">缓存已清除！</string>
+    
+    <!-- 用户偏好设置 -->
+    <string name="auto_check_update">自动检查更新</string>
+    <string name="auto_download_wifi">WIFI下自动下载安装包</string>
+    <string name="auto_play_voice">自动播放声音</string>
+    <string name="receive_push_message">接收推送消息</string>
+    <string name="auto_play_setting">自动播放设置</string>
+    <string name="auto_play_recycle">循环播放</string>
+    <string name="auto_play_delay">切换时间间隔</string>
+    <string name="time_second">%s秒</string>
+
+    <!-- 意见反馈 -->
+    <string name="feedback_content_tip">您宝贵的意见，我们前进的动力</string>
+    <string name="feedback_content_hint">反馈内容/建议</string>
+    <string name="feedback_contact_hint">联系方式/手机/邮箱/QQ</string>
+    <string name="feedback_content_not_null">请输入反馈内容/意见</string>
+    <string name="feedback_thanks_word">谢谢您的宝贵意见，我们会尽快处理。</string>
+    <string name="feedback_contact">联系方式</string>
+    <string name="submiting_data">正在提交数据</string>
+    
+</resources>

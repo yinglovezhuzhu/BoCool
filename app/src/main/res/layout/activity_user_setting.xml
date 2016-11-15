@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.xiaoying.bocool.widget.Titlebar
+        android:id="@+id/tb_user_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/setting_content_padding"
+            android:orientation="vertical">
+            <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:background="@drawable/bg_setting_content">
+				<CheckBox 
+			        style="@style/UserSettingItem"
+				    android:id="@+id/cb_user_setting_auto_check_update"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:drawableRight="@drawable/btn_check_selector"
+				    android:drawableEnd="@drawable/btn_check_selector"
+				    android:text="@string/auto_check_update"/>
+			    <View 
+			        android:layout_width="match_parent"
+			        android:layout_height="0.5dip"
+			        android:background="@color/gray_divider"/>
+				<CheckBox 
+			        style="@style/UserSettingItem"
+				    android:id="@+id/cb_user_setting_auto_download_wifi"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:drawableRight="@drawable/btn_check_selector"
+				    android:drawableEnd="@drawable/btn_check_selector"
+				    android:text="@string/auto_download_wifi"/>
+		    </LinearLayout>
+            <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/user_settting_item_category_layout_margin"
+		        android:orientation="vertical"
+		        android:background="@drawable/bg_setting_content">
+				<CheckBox 
+			        style="@style/UserSettingItem"
+				    android:id="@+id/cb_user_setting_auto_play_voice"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:drawableRight="@drawable/btn_check_selector"
+				    android:drawableEnd="@drawable/btn_check_selector"
+				    android:text="@string/auto_play_voice"/>
+		    </LinearLayout>
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/user_settting_item_category_layout_margin"
+		        android:orientation="vertical"
+		        android:background="@drawable/bg_setting_content">
+				<CheckBox
+			        style="@style/UserSettingItem"
+				    android:id="@+id/cb_user_setting_receive_push_message"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:drawableRight="@drawable/btn_check_selector"
+				    android:drawableEnd="@drawable/btn_check_selector"
+				    android:text="@string/receive_push_message"/>
+		    </LinearLayout>
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/user_settting_item_category_layout_margin"
+		        android:orientation="vertical"
+		        android:background="@drawable/bg_setting_content">
+				<TextView
+			        style="@style/UserSettingItem"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:text="@string/auto_play_setting"/>
+				<CheckBox
+			        style="@style/UserSettingItem"
+				    android:id="@+id/cb_user_setting_auto_play_recycle"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="start|center_vertical"
+				    android:button="@null"
+				    android:drawableRight="@drawable/btn_check_selector"
+				    android:drawableEnd="@drawable/btn_check_selector"
+				    android:text="@string/auto_play_recycle"/>
+				<TextView
+					style="@style/UserSettingItem"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="start|center_vertical"
+					android:button="@null"
+					android:text="@string/auto_play_delay"/>
+                <SeekBar
+                    android:id="@+id/sbar_user_setting_auto_play_delay"
+                    style="@style/UserSettingItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/user_setting_seekbar_maxHeight"
+                    android:thumb="@drawable/ic_seekbar_thumb"
+                    android:progressDrawable="@drawable/bg_seekbar_progress_drawable"/>
+                <TextView
+                    android:id="@+id/tv_user_setting_auto_play_delay_value"
+                    style="@style/UserSettingItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:button="@null"
+                    android:text="2秒"/>
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

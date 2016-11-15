@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_efefef">#FFEFEFEF</color>
+
+    <!-- 主背景色 -->
+    <color name="main_bg_color">#FFEFEFEF</color>
+    
+    <!-- 普通字体黑色 -->
+    <color name="text_color_black">#FF111111</color>
+    <!-- 普通字体黑色-禁用 -->
+    <color name="text_color_black_disable">#FFAFAFAF</color>
+    <!-- 普通字体白色 -->
+    <color name="text_color_white">#FFFAFAFA</color>
+    <!-- 深灰色字体颜色 -->
+    <color name="text_color_dark_gray">#FF5F5F5F</color>
+    <!-- 浅灰色字体颜色 -->
+    <color name="text_color_light_gray">#FF808080</color>
+    <!-- 水印文字的颜色 -->
+    <color name="text_color_hint">#FFBFBFBF</color>
+    <!-- 灰色分割线 -->
+    <color name="gray_divider">#FFB0B0B0</color>
+    
+    
+    <!-- 标题栏背景颜色 -->
+    <color name="bg_color_titlebar">#FF00A1A1</color>
+    <!-- 标题栏标题字体颜色 -->
+    <color name="title_text_color">#FFF1F6FB</color>
+    
+    <!-- 侧边栏菜单背景 -->
+    <color name="bg_color_menu">#FF454A4F</color>
+    
+    <color name="bg_color_black_alpha_bb">#BB000000</color>
+
+    <color name="bg_color_black_alpha_88">#88000000</color>
+
+    <color name="bg_color_card">#FF282828</color>
+    
+    <color name="bg_color_card_message_start">#774E4E4E</color>
+    <color name="bg_color_card_message_center">#AA000000</color>
+    <color name="bg_color_card_message_end">#DD000000</color>
+    <color name="text_color_error_page_msg">#FFCfCfCf</color>
+    <!-- 绿色字体颜色 -->
+    <color name="text_color_green">#FF008888</color>
+
+    <!-- Seekbar -->
+    <color name="seekbar_bg">#FF8E8E8E</color>
+    <color name="seekbar_progress">#FF00A1A1</color>
+    <color name="seekbar_secondary_progress">#FFFF8800</color>
+</resources>

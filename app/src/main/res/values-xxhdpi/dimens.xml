@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015. The BoCool Project.
+  ~
+  ~          yinglovezhuzhu@gmail.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~           http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    
+    <!-- SlidingMenu配置 -->
+    <dimen name="slidingmenu_offset">80dp</dimen>
+
+    <!-- splash -->
+    <dimen name="splash_happy_word_textSize">16sp</dimen>
+    <dimen name="splash_app_name_paddingTop">15dip</dimen>
+    <dimen name="splasht_happy_word_paddingTop">5dip</dimen>
+    <dimen name="splash_content_padding">8dip</dimen>
+
+    <!-- 左侧菜单 -->
+    <dimen name="menu_item_pading_horizontal">12dip</dimen>
+    <dimen name="menu_item_pading_vertical">8dip</dimen>
+    <dimen name="menu_item_icon_margin">12dip</dimen>
+    <dimen name="menu_item_text_size">18sp</dimen>
+    <dimen name="menu_list_exit_marging">12dip</dimen>
+    <dimen name="menu_content_padding">12dip</dimen>
+    <dimen name="menu_header_title_textSzie">20sp</dimen>
+    <dimen name="menu_header_label_textSzie">14sp</dimen>
+    
+    <!-- 标题栏 -->
+    <dimen name="titlebar_minHeight">44dip</dimen>
+    <dimen name="titlebar_button_min_size">32dip</dimen>
+    <dimen name="titlebar_button_title_marging">2dip</dimen>
+    <dimen name="titlebar_text_size">20sp</dimen>
+    <dimen name="titlebar_arrow_padding">8dip</dimen>
+    
+    <!-- 设置 -->
+    <dimen name="setting_content_padding">12dip</dimen>
+    <dimen name="setting_item_drawablePadding">8dip</dimen>
+    <dimen name="settting_item_title_textSize">18sp</dimen>
+    <dimen name="settting_item_label_textSize">16sp</dimen>
+    
+    <!-- 偏好设置 -->
+    <dimen name="user_setting_item_paddingHorizontal">12dip</dimen>
+    <dimen name="user_setting_item_paddingVertical">8dip</dimen>
+    <dimen name="user_setting_item_title_textSize">18sp</dimen>
+    <dimen name="user_setting_item_label_textSize">16sp</dimen>
+    <!-- 偏好设置中不同种类设置布局的间距 -->
+    <dimen name="user_settting_item_category_layout_margin">10dip</dimen>
+    <dimen name="user_setting_seekbar_maxHeight">3dp</dimen>
+    
+    <!-- 关于 -->
+    <dimen name="about_app_name_textSize">26sp</dimen>
+    <dimen name="about_happy_word_textSize">20sp</dimen>
+    <dimen name="about_copyright_textSize">16sp</dimen>
+    <dimen name="about_content_padding">8dp</dimen>
+    <dimen name="about_app_name_paddingTop">12dp</dimen>
+    <dimen name="about_happy_word_paddingTop">2dp</dimen>
+    <dimen name="about_copyright_paddingVertical">20dp</dimen>
+    
+    <!-- 意见反馈 -->
+    <dimen name="feedback_contentPadding">10dip</dimen>
+    <dimen name="feedback_content_input_margingTop">8dip</dimen>
+    <dimen name="feedback_submit_margingTop">50dp</dimen>
+    <dimen name="feedback_submit_minWidth">180dp</dimen>
+    <!-- 下面输入框和上面输入框的间距 -->
+    <dimen name="feedback_inputs_marging">25dp</dimen>
+    <dimen name="feedback_textSize">18sp</dimen>
+    <dimen name="feedback_submit_textSize">22sp</dimen>
+    
+    <!-- 专辑 -->
+    <dimen name="issue_name_textSize">16sp</dimen>
+    <dimen name="issue_progress_textSize">14sp</dimen>
+    <dimen name="issue_title_padding">3dip</dimen>
+    <dimen name="issue_collect_padding">5dip</dimen>
+    <dimen name="issue_grid_horizontalSpacing">5dip</dimen>
+    <dimen name="issue_grid_verticalSpacing">10dip</dimen>
+    <dimen name="issue_grid_padding">8dip</dimen>
+    <dimen name="issue_loading_view_padding">3dip</dimen>
+    <dimen name="issue_loading_view_progress_szie">15dip</dimen>
+    <dimen name="issue_loading_view_textSize">16sp</dimen>
+    
+    <!-- 专辑详情 -->
+    <dimen name="issue_detail_voice_icon_margin">10dp</dimen>
+    <dimen name="issue_detail_extra_content_padding">5dp</dimen>
+    <dimen name="issue_detail_extra_text_margng">5dp</dimen>
+    <dimen name="issue_detail_extra_textSize">16sp</dimen>
+
+    <!-- 加载数据控件 -->
+    <dimen name="loading_view_padding">8dp</dimen>
+    <dimen name="loading_view_progress_size">20dp</dimen>
+    <dimen name="loading_view_progress_margin">10dp</dimen>
+    <dimen name="loading_view_textSize">18sp</dimen>
+
+    <!-- LoadingPage -->
+    <dimen name="loading_page_text_pading">12dp</dimen>
+    <dimen name="loading_page_error_textSize">18sp</dimen>
+    <dimen name="loading_page_message_textSize">20sp</dimen>
+
+    <!-- Error Page -->
+    <dimen name="error_page_msg_textSize">20sp</dimen>
+    <dimen name="error_page_reload_textSize">20sp</dimen>
+    <dimen name="error_page_msg_marginTop">4dip</dimen>
+    <dimen name="error_page_reload_marginTop">10dip</dimen>
+    <dimen name="error_page_reload_marginBottom">50dip</dimen>
+
+    <!-- Common -->
+    <dimen name="progress_size_big">50dp</dimen>
+    <dimen name="progress_size_small">30dp</dimen>
+</resources>
