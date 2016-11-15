@@ -34,6 +34,8 @@ android {
         applicationId "com.xiaoying.bocool"
         minSdkVersion 14
         targetSdkVersion 19
+        versionCode 6
+        versionName "2.3.0711"
         signingConfig signingConfigs.config
     }
     buildTypes {
