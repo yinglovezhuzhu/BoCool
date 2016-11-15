@@ -75,7 +75,7 @@ android {
                 def oldFile = output.outputFile
                 def newName = '';
     //          BoCool_release_v1.1.0509_build201504301555_android_360
-                def releaseApkName = 'BoCool_' + variant.buildType.name + '_v' + getVersionNameFromManifest() + '_build' + getDate() + "_android_" + variant.productFlavors[0].name + '.apk'
+                def releaseApkName = 'BoCool_' + variant.buildType.name + '_v' + versionName + '(' + version + ')' + '_build' + getDate() + "_android_" + variant.productFlavors[0].name + '.apk'
                 output.outputFile = new File(oldFile.parent, releaseApkName)
             }
         }
@@ -89,11 +89,6 @@ def getDate() {
     return formattedDate
 }
 
-//从androidManifest.xml中获取版本号
-def getVersionNameFromManifest(){
-    def manifestParser = new com.android.builder.core.DefaultManifestParser()
-    return manifestParser.getVersionName(android.sourceSets.main.manifest.srcFile)
-}
 
 dependencies {
     compile 'com.google.code.gson:gson:2.3'
